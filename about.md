@@ -8,7 +8,12 @@ permalink: /about/
 
 Currently experimenting in topics revolving around **image classification, object detection and semantic segmentation**, but generally curious about CV and NLP.
 
-<br/>
+
+## My CV
+<a href="{{site.baseurl}}/CV_AleksanderBojda_eng_gdpr.pdf" download="CV_AleksanderBojda">
+    <img src="{{{site.baseurl}}/images/PDF_file_icon.svg" width="6%" height="6%"/>
+</a>
+
 
 In my previous role as a robotics software engineer, had the opportunity to work on exciting projects that involved:
 - Designing and implementing **obstacle detection system** (lidar and stereo camera)
@@ -21,11 +26,6 @@ Former member of [Robotics Student Interest Group "KoNaR"](https://konar.pwr.edu
 - Took part in numerous robotics projects, competitions and hackathons
 - Most notably, participated (as software engineer) in ~1.5 years long project of developing robotics payload for [sounding rocket experiment](https://rexusbexus.net/)
 - Project ended with [succesful rocket launch and nominal operation of our experiment](https://www.facebook.com/teamTRACZ/videos/614381855668227/)
-
-<br/>
-
-<!-- ## CV  -->
-<!-- TODO - add CV -->
 
 <br/>
 
