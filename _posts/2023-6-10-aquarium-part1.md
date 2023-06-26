@@ -497,7 +497,7 @@ Below section contains selected representative images for each class and some co
   - Jellyfish
   - Starfish
 
-### Mislabeled image
+### Mislabeled image {#mislabeled_image}
 During the analysis, it turned out that one of the images in the dataset is mislabeled.
 
 <div class="img-container">
