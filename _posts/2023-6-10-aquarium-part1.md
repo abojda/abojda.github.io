@@ -166,7 +166,7 @@ def class_balance_statistics(coco):
 
   category_ids = coco.getCatIds()
 
-  # "0" in annotation file is marked as "creatures" supercategory for all animals
+  # "0" in annotation file is marked as "creatures" supercategory (all animals)
   # It is unused and has no own annotations so we remove it for clarity 
   category_ids.remove(0)
   
@@ -185,7 +185,8 @@ test_coco = COCO('/content/test/_annotations.coco.json')
 train_stats = class_balance_statistics(train_coco)
 valid_stats = class_balance_statistics(valid_coco)
 test_stats = class_balance_statistics(test_coco)
-combined_stats = {key: train_stats[key] + valid_stats[key] + test_stats[key] for key in train_stats.keys()}
+combined_stats = {key: train_stats[key] + valid_stats[key] + \
+                  test_stats[key] for key in train_stats.keys()}
 
 print('TRAIN')
 print(train_stats)
@@ -202,16 +203,20 @@ print(combined_stats)
 
 ```text
 TRAIN
-{'fish': 1965, 'jellyfish': 385, 'penguin': 330, 'puffin': 175, 'shark': 259, 'starfish': 78, 'stingray': 136}
+{'fish': 1965, 'jellyfish': 385, 'penguin': 330, 'puffin': 175,
+ 'shark': 259, 'starfish': 78, 'stingray': 136}
 
 VALID
-{'fish': 459, 'jellyfish': 155, 'penguin': 104, 'puffin': 74, 'shark': 57, 'starfish': 27, 'stingray': 33}
+{'fish': 459, 'jellyfish': 155, 'penguin': 104, 'puffin': 74,
+ 'shark': 57, 'starfish': 27, 'stingray': 33}
 
 TEST
-{'fish': 249, 'jellyfish': 154, 'penguin': 82, 'puffin': 35, 'shark': 38, 'starfish': 11, 'stingray': 15}
+{'fish': 249, 'jellyfish': 154, 'penguin': 82, 'puffin': 35,
+ 'shark': 38, 'starfish': 11, 'stingray': 15}
 
 COMBINED
-{'fish': 2673, 'jellyfish': 694, 'penguin': 516, 'puffin': 284, 'shark': 354, 'starfish': 116, 'stingray': 184}
+{'fish': 2673, 'jellyfish': 694, 'penguin': 516, 'puffin': 284,
+ 'shark': 354, 'starfish': 116, 'stingray': 184}
 ```
 
 First of all, we can confirm that sum of annotations for all splits (`combined_stats`) matches values reported by Roboflow Health Check.
@@ -339,20 +344,25 @@ FiftyOne also offers powerful API, which we can use to export/download annotated
 
 
 ```python
-classes = ['fish', 'jellyfish', 'penguin', 'shark', 'puffin', 'stingray', 'starfish']
+classes = ['fish', 'jellyfish', 'penguin','shark', 'puffin', 'stingray', 'starfish']
 splits = ['train', 'valid', 'test']
 
 for _class in classes:
     for split in splits:
         print(f'{_class} - {split}')
-        view = dataset.match_tags(split).filter_labels('detections', fo.ViewField('label') == _class)
+        output_dir = f"annotated_images/{_class}/{split}"
 
-        output_dir = f'annotated_images/{_class}/{split}'
-        view.draw_labels(output_dir, label_fields=['detections'],
-                          show_object_attrs=False,
-                          show_object_attr_names=False,
-                          show_object_names=False,
-                        )
+        view = dataset.match_tags(split).filter_labels(
+            "detections", fo.ViewField("label") == _class
+        )
+
+        view.draw_labels(
+            output_dir,
+            label_fields=["detections"],
+            show_object_attrs=False,
+            show_object_attr_names=False,
+            show_object_names=False,
+        )
 ```
 
 As labeled images are now organized in directories we can explore each of the classes separately and understand their properties.
