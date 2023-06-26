@@ -6,8 +6,6 @@ permalink: /about/
 
 **Deep Learning / Computer Vision Engineer with background in robotics and embedded programming and (not-so)short episode in space.**
 
-<br/>
-
 Currently experimenting in topics revolving around **image classification, object detection and semantic segmentation**, but generally curious about CV and NLP.
 
 <br/>
