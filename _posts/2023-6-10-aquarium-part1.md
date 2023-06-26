@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aquarium object detection #1 - Project motivation, assumptions and exploratory data analysis"
-excerpt: # overwrite auto-generated excerpt
+excerpt: "This is the first part of a series about aquarium object detection. It covers the project motivation, project assumptions, and exploratory data analysis (EDA) of the Aquarium Combined dataset."
 ---
 **Table of contents**
 1. [Project motivation]({{site.baseurl}}{{page.url}}#motivation)

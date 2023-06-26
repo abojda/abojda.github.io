@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aquarium object detection #2 - YOLOv5 baseline"
-excerpt: # overwrite auto-generated excerpt
+excerpt: "In this article we focus on training and improving a baseline model using the YOLOv5 framework. It also introduces basic model evaluation techniques."
 ---
 {% capture imgurl %}{{site.baseurl}}/images/posts/aquarium-part2{% endcapture %}
 {% assign part = 2 %}
