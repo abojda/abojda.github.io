@@ -1,9 +1,6 @@
 ---
 layout: post
-# title: "[#1] Object detection on Aquarium dataset"
-# title: "Object detection on Aquarium dataset [#1]"
-# title: "Object detection on Aquarium dataset [Part 1]"
-title: "Aquarium object detection [Part 1]"
+title: "[Aquarium object detection #1] - Project outline, Exploratory Data Analysis and YOLOv5 baseline"
 excerpt: # overwrite auto-generated excerpt
 ---
 **Table of contents**
