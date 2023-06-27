@@ -3,8 +3,8 @@ layout: post
 title: "Aquarium object detection #2 - YOLOv5 baseline"
 excerpt: "In this article we focus on training and improving a baseline model using the YOLOv5 framework. It also introduces basic model evaluation techniques."
 ---
-{% capture imgurl %}{{site.baseurl}}/images/posts/aquarium-part2{% endcapture %}
 {% assign part = 2 %}
+{% capture imgurl %}{{site.baseurl}}/images/posts/aquarium-part{{part}}{% endcapture %}
 **Table of contents**
 1. [Default YOLOv5 training]({{site.baseurl}}{{page.url}}#default_training)
     1. [Training code]({{site.baseurl}}{{page.url}}#default_training_code)
