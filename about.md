@@ -11,7 +11,7 @@ Currently experimenting in topics revolving around **image classification, objec
 
 ## My CV
 <a href="{{site.baseurl}}/CV_AleksanderBojda_eng_gdpr.pdf" download="CV_AleksanderBojda">
-    <img src="{{{site.baseurl}}/images/PDF_file_icon.svg" width="6%" height="6%"/>
+    <img src="{{site.baseurl}}/images/PDF_file_icon.svg" width="6%" height="6%"/>
 </a>
 
 
