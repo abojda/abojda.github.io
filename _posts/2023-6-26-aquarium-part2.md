@@ -101,7 +101,7 @@ With this code we will train a "small" model starting from COCO-pretrained weigh
 %tensorboard --logdir runs/train
 ```
 
-**We also opted to cache images in memory with the `cache='ram'` option as it drastically shortens training time. Training of a small model for 100 epochs takes over 3 hours without caching and around 18 minutes with memory caching -- that is 10x faster!**
+**We also opted to cache images in memory with the `cache='ram'` option as it drastically shortens training time. Training of a small model for 100 epochs takes over 3 hours without caching and around 18 minutes with memory caching -- that is 10x faster! (training on NVIDIA V100 GPU)**
 
 
 ## 1.2 Training results {#default_training_results}
@@ -497,7 +497,9 @@ session = fo.launch_app(dataset)
 
 Now, we can easily use FiftyOne to i.e. compare ground-truth annotations with model predictions, at different confidence levels.
 
-**TODO - add video**
+<video width="100%" preload="auto" muted controls>
+    <source src="{{imgurl}}/aquarium_fo.mp4" type="video/mp4"/>
+</video>
 
 # 4. Summary {#summary}
 In this article, we managed to establish a baseline model, tested some straightforward improvement ideas, and evaluated trained models. There are of course other aspects we could explore, including running experiments with larger (m/l/x) models or doing hyperparameter optimization. But we will end here as we’ve achieved our two main goals of understanding the YOLOv5 framework and establishing a baseline model.
