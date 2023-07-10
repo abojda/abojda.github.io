@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aquarium object detection #3 - Deploying YOLOv5 object detection with Gradio"
-excerpt: "We develop object detection demo with Gradio and deploy it to the HuggingFace Spaces"
+excerpt: "We develop object detection demo with Gradio and deploy it to the HuggingFace Spaces."
 ---
 {% assign part = 3 %}
 {% capture imgurl %}{{site.baseurl}}/images/posts/aquarium-part{{part}}{% endcapture %}
